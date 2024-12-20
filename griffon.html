@@ -16,7 +16,7 @@ It's your friend, the Griffin.
 {pg}
 I've used what is left of my magic powers to temporarily transport you into the digital realm.
 {pg}
-Come find me, and we'll discuss what happened to your presents this year...{password = 0}
+Come find me, and we'll discuss what happened to your presents this year...{combo1 = 0}{combo2 = 0}{combo3 = 0}{combo4 = 0}{combo5 = 0}{combo6 = 0}
 """
 BG_COLOR [0,0,0]
 
@@ -59,6 +59,11 @@ NAME Compy486
 3,255,28
 255,107,0
 3,255,57
+
+PAL 3
+255,0,208
+0,255,0
+255,93,0
 
 ROOM 1
 1,1,1,1,1,1,1,1,1,1,1,1,1,2,3,4
@@ -146,10 +151,10 @@ ROOM 4
 5c,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5d
 5c,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5d
 5c,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5d
-5c,5f,5f,5p,5f,5f,5f,5f,5f,5f,5f,5f,5f,5f,5f,5d
 5c,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5d
 5c,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5d
-5c,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5d
+5c,5f,5f,5f,5f,5f,5f,5f,5f,5f,5f,5p,5f,5f,5f,5d
+5c,5o,5o,5o,5o,5o,5o,5i,5i,5i,5i,5i,5i,5i,5i,5d
 5c,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5d
 5c,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5d
 5c,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5d
@@ -159,14 +164,11 @@ ROOM 4
 5i,5i,5i,5i,5i,5c,5i,5i,5i,5g,5i,5i,5i,5i,5i,5i
 5i,5i,5i,5i,5i,5c,5i,5i,5i,5g,5i,5i,5i,5i,5i,5i
 NAME north
-ITM 2 12,2
 EXT 6,15 3 6,0
 EXT 7,15 3 7,0
 EXT 8,15 3 8,0
-EXT 3,8 4 3,7 DLG f
-EXT 3,7 4 3,8
 PAL 1
-RENDER 3D
+RENDER 2D
 
 ROOM 5
 5i,5i,5i,5i,5i,5c,5i,5i,5i,5d,5i,5i,5i,5i,5i,5i
@@ -222,28 +224,25 @@ RENDER 2D
 
 ROOM 7
 5i,5f,5f,5f,5f,5f,5f,5f,5f,5f,5f,5f,5f,5i,5i,5i
-5c,5i,5i,5i,5g,5i,5i,5i,5i,5i,5i,5i,5i,5g,5i,5i
-5c,5i,5i,5i,5g,5i,5i,5i,5i,5i,5i,5i,5i,5g,5i,5i
-5c,5i,5i,5i,5g,5i,5i,5i,5i,5i,5i,5i,5i,5g,5i,5i
-5c,5i,5i,5i,5g,5i,5i,5i,5i,5i,5i,5i,5i,5g,5i,5i
-5c,5i,5i,5i,5g,5i,5i,5i,5i,5i,5i,5i,5i,5j,5f,5f
-5c,5i,5i,5i,5g,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i
-5c,5i,5i,5i,5g,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i
-5c,5i,5i,5i,5g,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i
-5c,5i,5i,5i,5g,5i,5i,5i,5i,5i,5i,5i,5i,5l,5e,5e
-5c,5i,5i,5i,5g,5i,5i,5i,5i,5i,5i,5i,5i,5d,5i,5i
-5c,5i,5i,5i,5o,5i,5i,5i,5i,5i,5i,5i,5i,5d,5i,5i
-5c,5i,5i,5i,5g,5i,5i,5i,5i,5i,5i,5i,5i,5d,5i,5i
-5c,5i,5i,5i,5g,5i,5i,5i,5i,5i,5i,5i,5i,5d,5i,5i
-5c,5i,5i,5i,5g,5i,5i,5i,5i,5i,5i,5i,5i,5d,5i,5i
+5c,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5g,5i,5i
+5c,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5g,5i,5i
+5c,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5g,5i,5i
+5c,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5g,5i,5i
+5c,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5j,5f,5f
+5c,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i
+5c,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i
+5c,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i
+5c,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5l,5e,5e
+5c,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5d,5i,5i
+5c,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5d,5i,5i
+5c,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5d,5i,5i
+5c,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5d,5i,5i
+5c,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5d,5i,5i
 5i,5e,5e,5e,5e,5e,5e,5e,5e,5e,5e,5e,5e,5i,5i,5i
 NAME west
-ITM 1 2,2
 EXT 15,8 3 0,8
 EXT 15,7 3 0,7
 EXT 15,6 3 0,6
-EXT 4,11 7 3,11 DLG f
-EXT 3,11 7 4,11
 PAL 1
 RENDER 2D
 
@@ -2804,24 +2803,22 @@ TIL 5n
 COL 1
 
 TIL 5o
-0,1,1,1,1,1,1,1
-1,4,1,1,1,1,1,1
-4,1,1,1,1,1,1,1
-1,0,1,1,1,1,1,1
-4,1,1,1,1,1,1,1
-1,4,1,1,1,1,1,1
-4,1,1,1,1,1,1,1
-1,4,1,1,1,1,1,1
->
-1,4,1,1,1,1,1,1
-4,1,1,1,1,1,1,1
-1,0,1,1,1,1,1,1
-4,1,1,1,1,1,1,1
-1,4,1,1,1,1,1,1
-0,1,1,1,1,1,1,1
-1,4,1,1,1,1,1,1
-4,1,1,1,1,1,1,1
-WAL false
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4
+4,4,4,4,4,4,4,1,1,4,4,4,4,4,4,4
+4,4,4,4,4,4,4,1,1,4,4,4,4,4,4,4
+4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
 COL 1
 
 TIL 5p
@@ -2831,8 +2828,8 @@ TIL 5p
 1,1,1,1,1,1,1,1
 1,1,1,1,1,1,1,1
 1,1,1,1,1,1,1,1
-4,1,0,1,4,1,4,1
-1,4,1,4,1,0,1,4
+4,1,4,1,4,1,4,1
+1,4,1,4,1,4,1,4
 >
 1,1,1,1,1,1,1,1
 1,1,1,1,1,1,1,1
@@ -2840,10 +2837,39 @@ TIL 5p
 1,1,1,1,1,1,1,1
 1,1,1,1,1,1,1,1
 1,1,1,1,1,1,1,1
-1,4,1,4,1,0,1,4
-4,1,4,1,0,1,4,1
-WAL false
+1,4,1,4,1,4,1,4
+4,1,4,1,4,1,4,1
+NAME enddoor
+WAL true
 COL 1
+
+SPR 10
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+7,7,7,7,7,7,7,7
+7,7,7,7,7,7,7,7
+7,7,7,7,7,7,7,7
+7,7,7,7,7,7,7,7
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+NAME title substitute
+DLG g
+POS 4 7,10
+COL 2
+
+SPR 11
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+NAME enddoor
+DLG m
+POS 4 11,6
+COL 2
 
 SPR A
 1001000000,0,0,0,0,0,0,3,3,3,3,0,0,0,0,0
@@ -2879,7 +2905,7 @@ SPR A
 0,0,0,0,0,0,3,0,0,3,0,0,0,0,0,0
 0,0,0,0,0,0,0,3,0,0,3,0,0,0,0,0
 0,0,0,0,0,0,3,3,0,3,3,0,0,0,0,0
-POS 4 3,10
+POS 4 7,14
 COL 1
 
 SPR b
@@ -2917,7 +2943,7 @@ SPR b
 0,0,0,0,0,0,0,4,4,4,0,0,0,0,0,0
 0,0,0,0,0,0,0,0,0,4,4,0,0,0,0,0
 DLG 3
-POS 1 4,1
+POS 6 8,6
 COL 2
 
 SPR h
@@ -2955,7 +2981,7 @@ SPR h
 0,0,0,0,0,0,0,4,4,4,0,0,0,0,0,0
 0,0,0,0,0,0,0,0,0,4,4,0,0,0,0,0
 DLG 4
-POS 7 6,6
+POS 7 3,6
 COL 2
 
 SPR i
@@ -2993,7 +3019,7 @@ SPR i
 0,0,0,0,0,0,0,4,4,4,0,0,0,0,0,0
 0,0,0,0,0,0,0,0,0,4,4,0,0,0,0,0
 DLG 5
-POS 4 6,8
+POS 4 11,10
 COL 2
 
 SPR j
@@ -3031,7 +3057,6 @@ SPR j
 0,0,0,0,0,0,0,4,4,4,0,0,0,0,0,0
 0,0,0,0,0,0,0,0,0,4,4,0,0,0,0,0
 DLG 6
-POS 6 8,6
 COL 2
 
 SPR k
@@ -3143,13 +3168,13 @@ SPR m
 5,0,0,0,0,5,5,0,0,0,5,5,0,5,5,0
 0,5,0,0,0,5,0,0,0,0,5,5,0,5,5,0
 0,0,5,5,5,5,0,0,0,0,5,5,0,5,5,0
-POS 7 7,7
+POS 7 4,7
 COL 2
 
 SPR n
 0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,0
 0,0,0,0,0,0,8,8,8,0,0,0,0,0,0,0
-0,0,0,0,0,8,0,8,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,0
 0,0,0,0,8,0,0,0,0,0,8,0,0,0,0,0
 0,0,0,0,8,0,8,0,8,0,8,0,0,0,0,0
 0,0,0,8,0,0,8,8,8,0,0,8,0,0,0,0
@@ -3166,7 +3191,7 @@ SPR n
 >
 0,0,0,0,0,0,0,0,8,0,0,0,0,0,0,0
 0,0,0,0,0,0,0,8,8,8,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,8,0,8,0,0,0,0,0
+0,0,0,0,0,0,0,0,8,0,0,0,0,0,0,0
 0,0,0,0,0,8,0,0,0,0,0,8,0,0,0,0
 0,0,0,0,0,8,0,8,0,8,0,8,0,0,0,0
 0,0,0,0,8,0,0,8,8,8,0,0,8,0,0,0
@@ -3180,7 +3205,7 @@ SPR n
 0,0,0,8,0,0,0,8,8,8,0,0,0,8,0,0
 0,0,0,8,0,0,0,0,0,0,0,0,0,8,0,0
 0,0,0,0,8,0,0,0,0,0,0,0,8,0,0,0
-POS 4 7,9
+POS 4 12,11
 COL 2
 
 SPR o
@@ -3327,6 +3352,90 @@ SPR t
 POS 5 5,8
 COL 2
 
+SPR u
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+NAME combo1
+DLG f
+POS 4 1,7
+COL 2
+
+SPR v
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+NAME combo2
+DLG h
+POS 4 2,7
+COL 2
+
+SPR w
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+NAME combo3
+DLG i
+POS 4 3,7
+COL 2
+
+SPR x
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+NAME combo4
+DLG j
+POS 4 4,7
+COL 2
+
+SPR y
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+NAME combo5
+DLG k
+POS 4 5,7
+COL 2
+
+SPR z
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+NAME combo6
+DLG l
+POS 4 6,7
+COL 2
+
 ITM 0
 0,0,0,0,0,0,0,0
 0,0,0,0,0,0,0,0
@@ -3342,38 +3451,16 @@ COL 1
 
 ITM 1
 0,0,0,0,0,0,0,0
-0,0,4,4,4,4,0,0
-0,0,4,0,0,4,0,0
-0,0,4,4,4,4,0,0
-0,0,0,4,0,0,0,0
-0,0,0,4,4,0,0,0
-0,0,0,4,0,0,0,0
-0,0,0,4,4,0,0,0
+0,0,1,1,1,1,0,0
+0,0,1,0,0,1,0,0
+0,0,1,1,1,1,0,0
+0,0,0,1,0,0,0,0
+0,0,0,1,1,0,0,0
+0,0,0,1,0,0,0,0
+0,0,0,1,1,0,0,0
 NAME key
 DLG 2
 COL 1
-
-ITM 2
-0,0,0,0,0,0,0,0
-0,0,4,4,4,4,0,0
-0,0,4,0,0,4,0,0
-0,0,4,4,4,4,0,0
-0,0,0,4,0,0,0,0
-0,0,0,4,4,0,0,0
-0,0,0,4,0,0,0,0
-0,0,0,4,4,0,0,0
-COL 2
-
-ITM 3
-0,0,0,0,0,0,0,0
-0,0,4,4,4,4,0,0
-0,0,4,0,0,4,0,0
-0,0,4,4,4,4,0,0
-0,0,0,4,0,0,0,0
-0,0,0,4,4,0,0,0
-0,0,0,4,0,0,0,0
-0,0,0,4,4,0,0,0
-COL 2
 
 DLG 1
 You found a nice warm cup of tea
@@ -3412,19 +3499,19 @@ NAME sprite b dialog
 BG_COLOR [0,0,0]
 
 DLG 4
-riddle 1
+The Order DRIVES a hard bargain for hard DRIVES. 
 NAME sprite h dialog
 
 DLG 5
-riddle 2
+The Order loves to DECKorate their computer cases.
 NAME sprite i dialog
 
 DLG 6
-riddle 3
+BASically procEssor is MEaNT to solve logic TABLEs. 
 NAME sprite j dialog
 
 DLG 7
-riddle 4
+You'll need to carefully STUDY how to attach the graphics card.
 NAME sprite k dialog
 
 DLG 8
@@ -3504,6 +3591,9 @@ DLG DATA3D
     },
     "TIL_5j": {
       "type": "floor"
+    },
+    "TIL_5p": {
+      "type": "floor"
     }
   },
   "stack": {}
@@ -3511,7 +3601,7 @@ DLG DATA3D
 """
 
 DLG DRAWINGSIZE
-16
+8
 
 DLG a
 {clr 6}WELCOME TO THE INTERNET{clr}
@@ -3528,15 +3618,13 @@ NAME sprite s dialog
 
 DLG d
 """
-Where to?
-Floor # (1-4):{clr 11}<type a number>{clr}
-{input "password" 1 9}{pg}{
-  - password == "bee" ?
-    Great work!
-    {property locked false} 
+{
+  - {item "1"} >= 1 ?
+    {property locked false}
+    The key opens the door!
   - else ?
-    Guess I need to pick an existing floor number.
-    {property locked true} 
+    {property locked true}
+    The door is locked...
 }
 """
 NAME locked exit 1
@@ -3545,44 +3633,114 @@ DLG e
 """
 {
   - {item "1"} >= 1 ?
-    {property locked false} 
+    {property locked false}
+    The key opens the door!
   - else ?
-    {property locked true} 
+    {property locked true}
+    The door is locked...
 }
 """
 NAME locked exit 2
 
 DLG f
 """
-What's the passcode? <type in your answer>
-{input "password" 1 9}{pg}{
-  - password == 7 ?
-    Great work!
-    {property locked false} 
-  - else ?
-    Guess I need to answer the riddle first.
-    {property locked true} 
-}
+Panel is set to {say combo1}
+{pg}
+Change it by typing in a different number: 
+{input "combo1" 0 9}
+
 """
-NAME exit narration 1
+NAME combo1 dialog
+BG_COLOR [0,0,0]
 
 DLG g
-"""
-What's the passcode? <type in your answer>
-{input "password" 1 9}{pg}{
-  - password == 5 ?
-    Great work!
-    {property locked false} 
-  - else ?
-    Guess I need to answer the riddle first.
-    {property locked true} 
-}
-"""
-NAME exit narration 2
+Hey!{combo1 = 0}{combo2 = 0}{combo3 = 0}{combo4 = 0}{combo5 = 0}{combo6 = 0}
+NAME sprite 10 dialog
+BG_COLOR [0,0,0]
 
 DLG h
-You walk through the doorway
-NAME exit narration 3
+"""
+Panel is set to {say combo2}
+{pg}
+Change it by typing in a different number: 
+{input "combo2" 0 9}
+"""
+NAME combo2 dialog
+
+DLG i
+"""
+Panel is set to {say combo3}
+{pg}
+Change it by typing in a different number: 
+{input "combo3" 0 9}
+"""
+NAME combo3 dialog
+
+DLG j
+"""
+Panel is set to {say combo4}
+{pg}
+Change it by typing in a different number: 
+{input "combo4" 0 9}
+"""
+NAME combo4 dialog
+
+DLG k
+"""
+Panel is set to {say combo5}
+{pg}
+Change it by typing in a different number: 
+{input "combo5" 0 9}
+"""
+NAME combo5 dialog
+
+DLG l
+"""
+Panel is set to {say combo6}
+{pg}
+Change it by typing in a different number: 
+{input "combo6" 0 9}
+"""
+NAME combo6 dialog
+
+DLG m
+"""
+{
+  - combo1 == 5 ?
+    Combo1 correct!{
+      - combo2 == 3 ?
+        Combo2 correct!{
+          - combo3 == 7 ?
+            Combo3 correct!{
+              - combo4 == 2 ?
+                Combo4 correct!{
+                  - combo5 == 4 ?
+                    Combo5 correct!{
+                      - combo6 == 5 ?
+                        Combo6 correct!
+                      - else ?
+                        Door locked.
+                    }
+                  - else ?
+                    Door locked.
+                }
+              - else ?
+                Door locked.
+            }
+          - else ?
+            Door locked.
+        }
+      - else ?
+        Door locked.
+    }
+  - else ?
+    Door locked.
+}
+{say combo1}{say combo2}{say combo3}{say combo4}{say combo5}{say combo6}
+
+"""
+NAME enddoor dialog
+BG_COLOR [0,0,0]
 
 VAR a
 42
