@@ -16,7 +16,7 @@ It's your friend, the Griffin.
 {pg}
 I've used what is left of my magic powers to temporarily transport you into the digital realm.
 {pg}
-Come find me, and we'll discuss what happened to your presents this year...{combo1 = 0}{combo2 = 0}{combo3 = 0}{combo4 = 0}{combo5 = 0}{combo6 = 0}
+Come find me, and we'll discuss what happened to your presents this year...{combo1 = 0}{combo2 = 0}{combo3 = 0}{combo4 = 0}{combo5 = 0}{combo6 = 0}{combo1temp = 0}{combo2temp = 0}{combo3temp = 0}{combo4temp = 0}{combo5temp = 0}{combo6temp = 0}
 """
 BG_COLOR [0,0,0]
 
@@ -167,6 +167,8 @@ NAME north
 EXT 6,15 3 6,0
 EXT 7,15 3 7,0
 EXT 8,15 3 8,0
+EXT 11,7 4 11,6 DLG m
+EXT 11,6 4 11,7
 PAL 1
 RENDER 2D
 
@@ -2840,7 +2842,7 @@ TIL 5p
 1,4,1,4,1,4,1,4
 4,1,4,1,4,1,4,1
 NAME enddoor
-WAL true
+WAL false
 COL 1
 
 SPR 10
@@ -2868,7 +2870,7 @@ SPR 11
 0,0,0,0,0,0,0,0
 NAME enddoor
 DLG m
-POS 4 11,6
+POS 4 13,2
 COL 2
 
 SPR A
@@ -3591,9 +3593,6 @@ DLG DATA3D
     },
     "TIL_5j": {
       "type": "floor"
-    },
-    "TIL_5p": {
-      "type": "floor"
     }
   },
   "stack": {}
@@ -3644,11 +3643,33 @@ NAME locked exit 2
 
 DLG f
 """
-Panel is set to {say combo1}
+{
+  - combo1 == 0 ?
+    Panel is set to {say combo1}
+  - combo1 == 1 ?
+    Panel is set to {say combo1}
+  - combo1 == 2 ?
+    Panel is set to {say combo1}
+  - combo1 == 3 ?
+    Panel is set to {say combo1}
+  - combo1 == 4 ?
+    Panel is set to {say combo1}
+  - combo1 == 5 ?
+    Panel is set to {say combo1}
+  - combo1 == 6 ?
+    Panel is set to {say combo1}
+  - combo1 == 7 ?
+    Panel is set to {say combo1}
+  - combo1 == 8 ?
+    Panel is set to {say combo1}
+  - combo1 == 9 ?
+    Panel is set to {say combo1}
+  - else ?
+    Panel is set to 0 {combo1 = 0}
+}
 {pg}
-Change it by typing in a different number: 
-{input "combo1" 0 9}
-
+What do you want to set the panel to? <type in a number> 
+{input "combo1" 1 9}
 """
 NAME combo1 dialog
 BG_COLOR [0,0,0]
@@ -3707,40 +3728,62 @@ DLG m
 """
 {
   - combo1 == 5 ?
-    Combo1 correct!{
+    {
       - combo2 == 3 ?
-        Combo2 correct!{
+        {
           - combo3 == 7 ?
-            Combo3 correct!{
+            {
               - combo4 == 2 ?
-                Combo4 correct!{
+                {
                   - combo5 == 4 ?
-                    Combo5 correct!{
+                    {
                       - combo6 == 5 ?
-                        Combo6 correct!
+                        {property locked false} The door is open! 
                       - else ?
-                        Door locked.
+                        Door locked. {property locked true} 
                     }
                   - else ?
-                    Door locked.
+                    Door locked. {property locked true}
                 }
               - else ?
-                Door locked.
+                Door locked. {property locked true}
             }
           - else ?
-            Door locked.
+            Door locked. {property locked true}
         }
       - else ?
-        Door locked.
+        Door locked. {property locked true}
     }
   - else ?
-    Door locked.
+    Door locked. {property locked true}
 }
-{say combo1}{say combo2}{say combo3}{say combo4}{say combo5}{say combo6}
 
 """
 NAME enddoor dialog
 BG_COLOR [0,0,0]
+
+DLG n
+You walk through the doorway
+NAME exit narration 1
+
+DLG o
+"""
+{
+  - {item "1"} >= 1 ?
+    {property locked false} 
+  - else ?
+    {property locked true} 
+}
+"""
+NAME locked exit 3
+
+DLG p
+You walk through the doorway
+NAME exit narration 2
+
+DLG q
+You walk through the doorway
+NAME exit narration 3
 
 VAR a
 42
