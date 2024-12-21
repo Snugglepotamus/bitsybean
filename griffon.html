@@ -31,8 +31,6 @@ BG_COLOR [0,0,0]
 
 AUDIO_URL https://github.com/Snugglepotamus/bitsybean/raw/main/audio
 
-SKIP_TITLE true
-
 PAL 0
 NAME blueprint
 0,82,204
@@ -3181,7 +3179,7 @@ SPR A
 0,0,0,0,0,0,3,0,0,3,0,0,0,0,0,0
 0,0,0,0,0,0,0,3,0,0,3,0,0,0,0,0
 0,0,0,0,0,0,3,3,0,3,3,0,0,0,0,0
-POS 4 7,5
+POS 2 7,11
 COL 1
 
 SPR b
@@ -3720,19 +3718,19 @@ NAME sprite b dialog
 BG_COLOR [0,0,0]
 
 DLG 4
-The Order DRIVES a hard bargain for hard DRIVES. 
+{clr 6}The Order DRIVES a hard bargain for hard DRIVES.{clr}
 NAME sprite h dialog
 
 DLG 5
-The Order loves to DECKorate their computer cases.
+{clr 6}The Order loves to DECKorate their computer cases.{clr}
 NAME sprite i dialog
 
 DLG 6
-BASically procEssor is MEaNT to solve logic TABLEs. 
+{clr 6}BASically procEssor is MEaNT to solve logic TABLEs.{clr} 
 NAME sprite j dialog
 
 DLG 7
-You'll need to carefully STUDY how to attach the RAM to the motherboard.
+{clr 6}You'll need to carefully STUDY how to attach the memory to the motherboard.{clr}
 NAME sprite k dialog
 
 DLG 8
@@ -4161,7 +4159,7 @@ DLG u
 """
 {
   - {item "1"} >= 1 ?
-    You unlock the button and press it! {music "Cloud.mp3"} {property locked false}
+    {music "Cloud.mp3"} You unlock the button and press it! {property locked false}
   - else ?
     The button won't budge. You see a keyhole in its base. {property locked true} 
 }
