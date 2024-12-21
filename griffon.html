@@ -150,7 +150,7 @@ ROOM 4
 5i,5f,5f,5f,5f,5f,5f,5f,5f,5f,5f,5f,5f,5f,5f,5i
 5c,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5d
 5c,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5d
-5c,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5d
+5c,5i,5i,5n,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5d
 5c,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5d
 5c,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5d
 5c,5f,5f,5f,5f,5f,5f,5f,5f,5f,5f,5p,5f,5f,5f,5d
@@ -175,28 +175,24 @@ RENDER 2D
 ROOM 5
 5i,5i,5i,5i,5i,5c,5i,5i,5i,5d,5i,5i,5i,5i,5i,5i
 5i,5f,5f,5f,5f,5h,5i,5i,5i,5j,5f,5f,5f,5f,5f,5i
-5c,5i,5i,5i,5i,5c,5i,5i,5i,5d,5i,5i,5i,5i,5i,5d
-5c,5i,5i,5i,5i,5c,5i,5i,5i,5d,5i,5i,5i,5i,5i,5d
-5c,5i,5i,5i,5i,5i,5e,5m,5e,5i,5i,5i,5i,5i,5i,5d
 5c,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5d
 5c,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5d
 5c,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5d
 5c,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5d
 5c,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5d
-5c,5i,5i,5i,5i,5i,5i,5i,5i,5c,5m,5e,5e,5e,5e,5d
-5c,5i,5i,5i,5i,5i,5i,5i,5i,5c,5i,5i,5i,5i,5i,5d
-5c,5i,5i,5i,5i,5i,5i,5i,5i,5c,5i,5i,5n,5i,5i,5d
-5c,5i,5i,5i,5i,5i,5i,5i,5i,5c,5i,5i,5i,5i,5i,5d
-5c,5i,5i,5i,5i,5i,5i,5i,5i,5c,5i,5i,5i,5i,5i,5d
+5c,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5d
+5c,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5d
+5c,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5d
+5c,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5d
+5c,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5d
+5c,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5d
+5c,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5d
+5c,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5i,5d
 5i,5e,5e,5e,5e,5e,5e,5e,5e,5e,5e,5e,5e,5e,5e,5i
 NAME south
 EXT 6,0 3 7,15
 EXT 8,0 3 9,15
 EXT 7,0 3 8,15
-EXT 7,3 5 7,4 DLG d
-EXT 7,4 5 7,3
-EXT 10,9 5 10,10 DLG e
-EXT 10,10 5 10,9
 PAL 1
 RENDER 2D
 
@@ -2945,7 +2941,7 @@ SPR b
 0,0,0,0,0,0,0,4,4,4,0,0,0,0,0,0
 0,0,0,0,0,0,0,0,0,4,4,0,0,0,0,0
 DLG 3
-POS 6 8,6
+POS 1 4,1
 COL 2
 
 SPR h
@@ -3681,46 +3677,161 @@ BG_COLOR [0,0,0]
 
 DLG h
 """
-Panel is set to {say combo2}
+{
+  - combo2 == 0 ?
+    Panel is set to {say combo2}
+  - combo2 == 1 ?
+    Panel is set to {say combo2}
+  - combo2 == 2 ?
+    Panel is set to {say combo2}
+  - combo2 == 3 ?
+    Panel is set to {say combo2}
+  - combo2 == 4 ?
+    Panel is set to {say combo2}
+  - combo2 == 5 ?
+    Panel is set to {say combo2}
+  - combo2 == 6 ?
+    Panel is set to {say combo2}
+  - combo2 == 7 ?
+    Panel is set to {say combo2}
+  - combo2 == 8 ?
+    Panel is set to {say combo2}
+  - combo2 == 9 ?
+    Panel is set to {say combo2}
+  - else ?
+    Panel is set to 0 {combo2 = 0}
+}
 {pg}
-Change it by typing in a different number: 
-{input "combo2" 0 9}
+What do you want to set the panel to? <type in a number> 
+{input "combo2" 1 9}
 """
 NAME combo2 dialog
 
 DLG i
 """
-Panel is set to {say combo3}
+{
+  - combo3 == 0 ?
+    Panel is set to {say combo3}
+  - combo3 == 1 ?
+    Panel is set to {say combo3}
+  - combo3 == 2 ?
+    Panel is set to {say combo3}
+  - combo3 == 3 ?
+    Panel is set to {say combo3}
+  - combo3 == 4 ?
+    Panel is set to {say combo3}
+  - combo3 == 5 ?
+    Panel is set to {say combo3}
+  - combo3 == 6 ?
+    Panel is set to {say combo3}
+  - combo3 == 7 ?
+    Panel is set to {say combo3}
+  - combo3 == 8 ?
+    Panel is set to {say combo3}
+  - combo3 == 9 ?
+    Panel is set to {say combo3}
+  - else ?
+    Panel is set to 0 {combo3 = 0}
+}
 {pg}
-Change it by typing in a different number: 
-{input "combo3" 0 9}
+What do you want to set the panel to? <type in a number> 
+{input "combo3" 1 9}
 """
 NAME combo3 dialog
 
 DLG j
 """
-Panel is set to {say combo4}
+{
+  - combo4 == 0 ?
+    Panel is set to {say combo4}
+  - combo4 == 1 ?
+    Panel is set to {say combo4}
+  - combo4 == 2 ?
+    Panel is set to {say combo4}
+  - combo4 == 3 ?
+    Panel is set to {say combo4}
+  - combo4 == 4 ?
+    Panel is set to {say combo4}
+  - combo4 == 5 ?
+    Panel is set to {say combo4}
+  - combo4 == 6 ?
+    Panel is set to {say combo4}
+  - combo4 == 7 ?
+    Panel is set to {say combo4}
+  - combo4 == 8 ?
+    Panel is set to {say combo4}
+  - combo4 == 9 ?
+    Panel is set to {say combo4}
+  - else ?
+    Panel is set to 0 {combo4 = 0}
+}
 {pg}
-Change it by typing in a different number: 
-{input "combo4" 0 9}
+What do you want to set the panel to? <type in a number> 
+{input "combo4" 1 9}
 """
 NAME combo4 dialog
 
 DLG k
 """
-Panel is set to {say combo5}
+{
+  - combo5 == 0 ?
+    Panel is set to {say combo5}
+  - combo5 == 1 ?
+    Panel is set to {say combo5}
+  - combo5 == 2 ?
+    Panel is set to {say combo5}
+  - combo5 == 3 ?
+    Panel is set to {say combo5}
+  - combo5 == 4 ?
+    Panel is set to {say combo5}
+  - combo5 == 5 ?
+    Panel is set to {say combo5}
+  - combo5 == 6 ?
+    Panel is set to {say combo5}
+  - combo5 == 7 ?
+    Panel is set to {say combo5}
+  - combo5 == 8 ?
+    Panel is set to {say combo5}
+  - combo5 == 9 ?
+    Panel is set to {say combo5}
+  - else ?
+    Panel is set to 0 {combo5 = 0}
+}
 {pg}
-Change it by typing in a different number: 
-{input "combo5" 0 9}
+What do you want to set the panel to? <type in a number> 
+{input "combo5" 1 9}
 """
 NAME combo5 dialog
 
 DLG l
 """
-Panel is set to {say combo6}
+{
+  - combo6 == 0 ?
+    Panel is set to {say combo6}
+  - combo6 == 1 ?
+    Panel is set to {say combo6}
+  - combo6 == 2 ?
+    Panel is set to {say combo6}
+  - combo6 == 3 ?
+    Panel is set to {say combo6}
+  - combo6 == 4 ?
+    Panel is set to {say combo6}
+  - combo6 == 5 ?
+    Panel is set to {say combo6}
+  - combo6 == 6 ?
+    Panel is set to {say combo6}
+  - combo6 == 7 ?
+    Panel is set to {say combo6}
+  - combo6 == 8 ?
+    Panel is set to {say combo6}
+  - combo6 == 9 ?
+    Panel is set to {say combo6}
+  - else ?
+    Panel is set to 0 {combo6 = 0}
+}
 {pg}
-Change it by typing in a different number: 
-{input "combo6" 0 9}
+What do you want to set the panel to? <type in a number> 
+{input "combo6" 1 9}
 """
 NAME combo6 dialog
 
